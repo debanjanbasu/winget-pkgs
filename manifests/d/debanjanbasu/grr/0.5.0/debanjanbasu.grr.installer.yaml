@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: debanjanbasu.grr
+PackageVersion: 0.5.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: grr.exe
+ReleaseDate: 2026-09-27
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/debanjanbasu/grr-cli/releases/download/v0.5.0/grr-v0.5.0-windows-x86_64.zip
+  InstallerSha256: 3B2B3951B61D4C9CF2E3387E54CA8BCBF06583445AA7B31D51F353E3419A05B3
+- Architecture: arm64
+  InstallerUrl: https://github.com/debanjanbasu/grr-cli/releases/download/v0.5.0/grr-v0.5.0-windows-aarch64.zip
+  InstallerSha256: 80DACC2C56B8EBC90713CBE9E24641A1FC3E35F331884E7E7727FF0A441478B7
+ManifestType: installer
+ManifestVersion: 1.12.0
